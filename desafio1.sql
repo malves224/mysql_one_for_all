@@ -6,7 +6,7 @@ USE SpotifyClone;
 CREATE TABLE `planos` (
   `id_plano` INT AUTO_INCREMENT NOT NULL,
   `nome` TEXT,
-  `valor` DOUBLE NOT NULL,
+  `valor` DECIMAL(4, 2) NOT NULL,
   PRIMARY KEY (`id_plano`)
 )engine = InnoDB;
 
@@ -68,7 +68,12 @@ INSERT INTO `album` VALUES (1,'Envious',1,1990),(2,'Exuberant',1,1993),(3,'Hallo
 
 INSERT INTO `cancoes` VALUES (1,1,'Soul For Us',200),(2,1,'Reflections Of Magic',163),(3,1,'Dance With Her Own',116),(4,2,'Troubles Of My Inner Fire',203),(5,2,'Time Fireworks',152),(6,3,'Magic Circus',105),(7,3,'Honey, So Do I',207),(8,3,'Sweetie, Let\'s Go Wild',139),(9,3,'She Knows',244),(10,4,'Fantasy For Me',100),(11,4,'Celebration Of More',146),(12,4,'Rock His Everything',223),(13,4,'Home Forever',231),(14,4,'Diamond Power',241),(15,4,'Let\'s Be Silly',132),(16,5,'Thang Of Thunder',240),(17,5,'Words Of Her Life',185),(18,5,'Without My Streets',176),(19,6,'Need Of The Evening',190),(20,6,'History Of My Roses',222),(21,6,'Without My Love',111),(22,6,'Walking And Game',123),(23,6,'Young And Father',197),(24,7,'Finding My Traditions',179),(25,7,'Walking And Man',229),(26,7,'Hard And Time',135),(27,7,'Honey, I\'m A Lone Wolf',150),(28,8,'She Thinks I Won\'t Stay Tonight',166),(29,8,'He Heard You\'re Bad For Me',154),(30,8,'He Hopes We Can\'t Stay\"\"',210),(31,8,'I Know I Know',117),(32,9,'He\'s Walking Away',159),(33,9,'He\'s Trouble',138),(34,9,'I Heard I Want To Bo Alone',120),(35,9,'I Ride Alone',151),(36,10,'Honey',79),(37,10,'You Cheated On Me',95),(38,10,'Wouldn\'t It Be Nice',213),(39,10,'Baby',136),(40,10,'You Make Me Feel So..',83);
 
-INSERT INTO `planos` VALUES (1,'gratuito',7.99),(2,'familiar',5.99),(3,'universitário',6.99),(4,'pessoal',7.99);
+INSERT INTO `planos` 
+VALUES 
+(1,'gratuito',0),
+(2,'familiar',7.99),
+(3,'universitário',5.99),
+(4,'pessoal',6.99);
 
 INSERT INTO `user` VALUES (1,'Thati',23,1,'2019-10-20'),(2,'Cintia',35,2,'2017-12-30'),(3,'Bill',20,3,'2019-06-05'),(4,'Roger',45,4,'2020-05-13'),(5,'Norman',58,4,'2017-02-17'),(6,'Patrick',33,2,'2017-01-06'),(7,'Vivian',26,3,'2018-01-05'),(8,'Carol',19,3,'2018-02-14'),(9,'Angelina',42,2,'2018-04-29'),(10,'Paul',46,2,'2017-01-17');
 
