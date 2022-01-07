@@ -2,7 +2,7 @@
 ## Projeto de fixação de conteúdos do bloco Mysql.
 
 O objetivo do projeto é fixar aprendizados do bloco de MySql no curso de desenvolvimento da Trybe.
-Nesse projeto Recebi dados (falsos) sobre usuarios, albuns, musicas, artistas, historico de reprodução, e planos disponivel, e o maior desafio foi normalizar esses dados para um banco de dados seguindo os padrôes das 3 formas normais.
+Nesse projeto Recebi dados (falsos) sobre usuários, álbuns, musicas, artistas, histórico de reprodução, e planos disponivel, e o maior desafio foi normalizar esses dados para um banco de dados seguindo os padrões das 3 formas normais.
 
 #### Requisitos:
 - [x] 1 - Criar um banco com o nome de SpotifyClone, e suas tabelas.
